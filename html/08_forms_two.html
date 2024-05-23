@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms:</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" value="Pradeep Kumar Kairamkonda">
+            <!-- Hard coded Pradeep Kumar Kairamkonda -->
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="100">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="month">Month:</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div>
+            <label for="week">Week:</label>
+            <input type="week" name="week" id="week">
+        </div>
+        <div>
+            <label>Select your favorate company:</label>
+            <input type="radio" name="company" id="deloitte" checked>Deloitte
+            <input type="radio" name="company" id="cognizant">Cognizant
+            <input type="radio" name="company" id="visa">Visa
+        </div>
+        <div>
+            <label>Select your favorate company:</label>
+            <input type="checkbox" name="company" id="deloitte">Deloitte
+            <input type="checkbox" name="company" id="cognizant">Cognizant
+            <input type="checkbox" name="company" id="visa">Visa
+        </div>
+        <div>
+            <label for="color">Select your favorate color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="male">Male:</option>
+                <option value="female">Female:</option>
+                <option value="others">Others:</option>
+            </select>
+        </div>
+        <div>
+        <label for="movie">Select a Movie:</label>
+        <input type="text" list="movies" name="movie" id="movie">
+        <datalist id="movies">
+            <option value="RRR">
+            <option value="Godavari">
+            <option value="Bahubali">
+            <option value="Kairamkonda">
+            <option value="Krish">
+        </datalist>
+        <div>
+            <label for="textarea">About my code:</label>
+            <textarea name="textarea" id="textarea" cols="20" rows="5" style="vertical-align: top;"></textarea>
+        </div>
+        <div>
+            <button>Submit</button>
+            <button>Reset</button>
+        </div>
+    </form>
+</body>
+</html>

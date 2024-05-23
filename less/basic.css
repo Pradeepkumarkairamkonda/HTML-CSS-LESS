@@ -1,0 +1,28 @@
+.commonRules {
+  text-align: center;
+}
+h1 {
+  color: green;
+  font-size: 25px;
+  background-color: red;
+  padding: 25px;
+  text-align: center;
+}
+p {
+  font-size: 25px;
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+p sub {
+  color: green;
+  font-size: 25px;
+  padding: 13px;
+}
+button {
+  text-align: center;
+  padding: 13px;
+}
+h3 {
+  border: 10px dashed yellow;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- 3,4,----------5/3/2023
+         5,6
+         7,8
+         9,10,
+         11,12
+         12,13,
+         15,16,---------5/11/2023
+     -->
+     <h2 style="text-align: center;">Contact Form:</h2>
+    <hr>
+    <form action="/" method="get">
+        <fieldset style="width: 20%;">
+            <legend style="text-align: center; font-weight: bold;">Contact Form:</legend>
+            <table >
+                <tbody>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">Phone:</label></td>
+                        <td><input type="number" name="number" id="number"></td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td><select name="gender" id="gender">
+                            <option value="male">Male:</option>
+                            <option value="female">Female:</option>
+                            <option value="others">Others:</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" name="age" id="age" min="18" max="100"></td>
+                </tr>
+                <tr>
+                    <td><label for="movie">Select a Movie:</label></td>
+                    <td><input type="text" list="movies" name="movie" id="movie"></td>
+                    <td><datalist id="movies">
+                            <option value="RRR">
+                            <option value="Godavari">
+                            <option value="Bahubali">
+                            <option value="Kairamkonda">
+                            <option value="Krish">
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td><label for="textarea">About my code:</label></td>
+                    <td><textarea name="textarea" id="textarea" cols="20" rows="5"
+                            style="vertical-align: top;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="box">
+                        <label for="box">I accept the terms and conditions.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    <td style="text-align: right;"><button>Reset</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+     
+</body>
+</html>

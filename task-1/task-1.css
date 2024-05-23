@@ -1,0 +1,41 @@
+body {
+    width: 75%;
+    margin: auto;
+}
+.header {
+    background-color: yellow;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+.main {
+    margin-top: 8px;
+}
+.nav {
+    width: 20%;
+    height: 500px;
+    background: yellow;
+    text-align: center;
+    display: inline-block;
+}
+.article {
+    width: 59%;
+    height: 500px;
+    background: yellow;
+    text-align: center;
+    display: inline-block;
+}
+.adds {
+    width: 20%;
+    height: 500px;
+    background: yellow;
+    text-align: center;
+    display: inline-block;
+}
+.footer {
+    background-color: yellow;
+    padding: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+

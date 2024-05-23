@@ -1,0 +1,56 @@
+// variables
+
+@heading: green;
+@pradeep: 25px;
+@header: red;
+@padding: 3px;
+@buttonPadding: 5px;
+
+// mixins
+
+.commonRules {
+    text-align: center;
+}
+
+// parametized mixins
+
+.myname (@width,  @style, @color) {
+    border: @width @style @color;
+}
+
+
+h1 {
+    color: @heading;
+    font-size: @pradeep*1;  // operators
+    background-color: @header;
+    //text-align: center;
+    padding: 20px+5;         // operators
+    .commonRules;   // from mixins
+}
+
+// nested styling
+
+p {
+    font-size: @pradeep;
+    background-color: @header;
+    // text-align: center;
+    padding: 20px;
+    .commonRules;  // from mixins
+
+    sub {
+        color: @heading;
+        font-size: @pradeep;
+        padding: @padding+10 ;    // operators
+    }
+}
+
+button {
+    .commonRules;  // mixins
+     padding: @buttonPadding+8;  // variables + operators
+
+}
+
+h3 {
+    .myname(10px; dashed; yellow);  // paramitezed mixens
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #welcome-header {
+            color: pink;
+        }
+
+        .about-header {
+            color :red;
+        }
+       /* nested selector */
+        .about-section p {
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- simple selectors-->
+    <div>
+        <h1 id="welcome-header">Welcome</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, alias.</p>
+    </div>
+    <div class="about-section">
+        <h1 class="about-header">About</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, ex.</p>
+    </div>
+</body>
+</html>
